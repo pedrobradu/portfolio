@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import profilePic from '../../assets/images/profile.jpeg'
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
           </p>
         </Col>
         <Col md={6}>
-          <Image src="[path_to_your_image]" roundedCircle fluid />
+          <Image src={profilePic} roundedCircle />
         </Col>
       </Row>
     </Container>

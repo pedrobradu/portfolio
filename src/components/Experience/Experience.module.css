@@ -13,17 +13,16 @@
   margin-bottom: 20px;
 }
 
-.experienceDetail {
-  position: relative;
-}
-
 .experienceDuration {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.experienceLogo img {
+  width: 120px; /* or whatever width you prefer */
+  height: 120px; /* or whatever height you prefer */
+  object-fit: contain; /* Ensures the image covers the entire space without distorting */
 }
 

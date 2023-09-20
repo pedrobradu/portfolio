@@ -12,14 +12,11 @@ function Footer() {
           <p>© 2023 by [Your Name]. All rights reserved.</p>
         </Col>
         <Col md={6} className={styles.socialLinks}>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/pedrobradu" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/pedro-bracher-duarte" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} />
           </a>
           {/* Add any other social media or important links as needed */}
         </Col>

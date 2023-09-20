@@ -9,3 +9,8 @@
 .projectCard {
   width: 100%;
 }
+
+.projectImage {
+  height: 350px;  /* or whatever height you prefer */
+  object-fit: cover;  /* this will ensure the image covers the area without distortion */
+}
