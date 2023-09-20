@@ -1,0 +1,13 @@
+.homeSection {
+  text-align: center;
+}
+
+.homeSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.homeSection .lead {
+  font-size: 1.2rem;
+}
+

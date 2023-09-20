@@ -1,0 +1,29 @@
+.experienceSection {
+  padding: 40px 0;
+}
+
+.experienceItem {
+  margin-bottom: 30px;
+}
+
+.experienceLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experienceDetail {
+  position: relative;
+}
+
+.experienceDuration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
