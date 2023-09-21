@@ -4,9 +4,14 @@ import { Container, Row, Col, ListGroup, Image } from 'react-bootstrap';
 import kuke from '../../assets/images/kuke.png'
 import novamente from '../../assets/images/novamente.png'
 import lewagon from '../../assets/images/lewagon.png'
-
+import { useInView } from 'react-intersection-observer';
 
 function Experience({id}) {
+
+  const [ref, inView] = useInView({
+    triggerOnce: false, // Observe forever
+    threshold: 0.3 // At least 10% of the element is visible
+  });
 
   const experiences = [
     {
@@ -49,15 +54,15 @@ function Experience({id}) {
   ];
 
   return (
-    <section id={id}>
+    <section id={id} ref={ref}>
       <Container className={styles.experienceSection}>
-        <h2 className="mb-5">Experience</h2>
+        <h2 className={`mb-5 ${inView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Experience</h2>
         {experiences.map((exp, index) => (
           <Row key={index} className={`d-flex ${styles.experienceItem}`}>
-            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
+            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo} ${inView ? "animate__animated animate__fadeInLeft" : "animate__animated animate__fadeOutLeft"}`}>
               <Image src={exp.logo} alt={`${exp.company} Logo`} fluid rounded />
             </Col>
-            <Col md={8} className={`d-flex align-items-center justify-content-center ${styles.experienceDetail}`}>
+            <Col md={8} className={`d-flex align-items-center justify-content-center ${styles.experienceDetail} ${styles.experienceLogo} ${inView ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOut"}`}>
               <div>
                 <h3>{exp.title} at {exp.company}</h3>
                 <p>{exp.description}</p>
@@ -69,7 +74,7 @@ function Experience({id}) {
                 ))}
               </ListGroup> */}
             </Col>
-            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
+            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo} ${styles.experienceLogo} ${inView ? "animate__animated animate__fadeInRight" : "animate__animated animate__fadeOutRight"}`}>
               <span className={styles.experienceDuration}>{exp.duration}</span>
             </Col>
           </Row>

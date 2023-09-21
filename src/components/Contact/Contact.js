@@ -1,11 +1,18 @@
 import React from 'react';
 import styles from './Contact.module.css';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { useInView } from 'react-intersection-observer';
 
 function Contact({id}) {
+  // inView will be true when the element is in the viewport
+  const [ref, inView] = useInView({
+    triggerOnce: false, // Observe forever
+    threshold: 0.3 // At least 10% of the element is visible
+  });
+
   return (
-    <section id={id}>
-      <Container className={styles.contactSection}>
+    <section id={id} ref={ref}>
+      <Container className={`${styles.contactSection} ${inView ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOutDown"}`}>
         <h2>Contact Me</h2>
         <Row>
           <Col md={6}>
