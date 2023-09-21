@@ -23,36 +23,39 @@ const projects = [
   // ... other projects
 ];
 
-function Projects() {
+function Projects({id}) {
   return (
-    <Container className={styles.projectsSection}>
-      <Row>
-        {projects.map((project, index) => (
-          <Col md={6} sm={12} key={index} className={styles.projectCol}>
-            <Card className={styles.projectCard}>
-              <Card.Img variant="top" src={project.image} className={styles.projectImage} />
-              <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>
-                  {project.description}
-                </Card.Text>
-                {project.type === 'video' ? (
-                  <Button href={project.liveLink} target="_blank">Watch Video</Button>
-                ) : (
-                  <>
-                    <Button href={project.liveLink} target="_blank">WebSite</Button>
-                    {/* Only render GitHub button if codeLink is present */}
-                    {project.codeLink && (
-                      <Button href={project.codeLink} target="_blank" className="ms-2">Github</Button>
-                    )}
-                  </>
-                )}
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <section id={id}>
+      <Container className={styles.projectsSection}>
+        <h2 className="mb-5">Projects</h2>
+        <Row>
+          {projects.map((project, index) => (
+            <Col md={6} sm={12} key={index} className={styles.projectCol}>
+              <Card className={styles.projectCard}>
+                <Card.Img variant="top" src={project.image} className={styles.projectImage} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>
+                    {project.description}
+                  </Card.Text>
+                  {project.type === 'video' ? (
+                    <Button href={project.liveLink} target="_blank">Watch Video</Button>
+                  ) : (
+                    <>
+                      <Button href={project.liveLink} target="_blank">WebSite</Button>
+                      {/* Only render GitHub button if codeLink is present */}
+                      {project.codeLink && (
+                        <Button href={project.codeLink} target="_blank" className="ms-2">Github</Button>
+                      )}
+                    </>
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 }
 

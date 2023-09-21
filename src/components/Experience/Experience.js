@@ -6,7 +6,7 @@ import novamente from '../../assets/images/novamente.png'
 import lewagon from '../../assets/images/lewagon.png'
 
 
-function Experience() {
+function Experience({id}) {
 
   const experiences = [
     {
@@ -49,31 +49,33 @@ function Experience() {
   ];
 
   return (
-    <Container className={styles.experienceSection}>
-      <h2 className="mb-5">Experience</h2>
-      {experiences.map((exp, index) => (
-        <Row key={index} className={`d-flex ${styles.experienceItem}`}>
-          <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
-            <Image src={exp.logo} alt={`${exp.company} Logo`} fluid rounded />
-          </Col>
-          <Col md={8} className={`d-flex align-items-center justify-content-center ${styles.experienceDetail}`}>
-            <div>
-              <h3>{exp.title} at {exp.company}</h3>
-              <p>{exp.description}</p>
-            </div>
-            {/* <h5>Key Responsibilities:</h5>
-            <ListGroup>
-              {exp.responsibilities.map((res, idx) => (
-                <ListGroup.Item key={idx}>{res}</ListGroup.Item>
-              ))}
-            </ListGroup> */}
-          </Col>
-          <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
-            <span className={styles.experienceDuration}>{exp.duration}</span>
-          </Col>
-        </Row>
-      ))}
-    </Container>
+    <section id={id}>
+      <Container className={styles.experienceSection}>
+        <h2 className="mb-5">Experience</h2>
+        {experiences.map((exp, index) => (
+          <Row key={index} className={`d-flex ${styles.experienceItem}`}>
+            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
+              <Image src={exp.logo} alt={`${exp.company} Logo`} fluid rounded />
+            </Col>
+            <Col md={8} className={`d-flex align-items-center justify-content-center ${styles.experienceDetail}`}>
+              <div>
+                <h3>{exp.title} at {exp.company}</h3>
+                <p>{exp.description}</p>
+              </div>
+              {/* <h5>Key Responsibilities:</h5>
+              <ListGroup>
+                {exp.responsibilities.map((res, idx) => (
+                  <ListGroup.Item key={idx}>{res}</ListGroup.Item>
+                ))}
+              </ListGroup> */}
+            </Col>
+            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo}`}>
+              <span className={styles.experienceDuration}>{exp.duration}</span>
+            </Col>
+          </Row>
+        ))}
+      </Container>
+    </section>
   );  
 }
 

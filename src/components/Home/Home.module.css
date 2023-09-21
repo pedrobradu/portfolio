@@ -1,5 +1,7 @@
 .homeSection {
+  margin-top: 8em;
   text-align: center;
+  height: 90vh;
 }
 
 .homeSection h1 {
