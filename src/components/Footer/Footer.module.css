@@ -3,18 +3,3 @@
   background-color: #333;  /* Dark background for the footer */
   color: #fff;  /* White text color */
 }
-
-.socialLinks a {
-  margin-left: 20px;
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.socialLinks a:hover {
-  color: #007bff;  /* Highlight color on hover (Bootstrap primary color) */
-}
-
-/* Increase the size of the Font Awesome icons slightly */
-.socialLinks a .fa {
-  font-size: 1.5rem;
-}

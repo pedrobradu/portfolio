@@ -9,6 +9,12 @@
   margin-bottom: 1rem;
 }
 
+.calligraphy {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 6rem;
+}
+
 .homeSection .lead {
   font-size: 1.2rem;
 }
@@ -43,7 +49,11 @@
   }
 
   .homeSection h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .calligraphy {
+    font-size: 3rem;
   }
 
   .homeSection .lead {

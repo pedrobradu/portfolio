@@ -17,9 +17,9 @@ function Home({id}) {
         <Row className="align-items-center">
           <Col md={6}>
             <div className={`${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
-              <h1>Hello, I'm [Your Name]</h1>
+              <h1>Hello, I'm <span className={`${styles.calligraphy}`}>Pedro Bracher Duarte</span></h1>
               <p className="lead">
-                [A brief statement about yourself or your expertise, e.g., "A passionate front-end developer with expertise in React and modern web technologies."]
+                Full Stack Software Developer with a Bachelor's degree in Civil Engineering and 5 years of entrepreneurial experience.
               </p>
             </div>
           </Col>

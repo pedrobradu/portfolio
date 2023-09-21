@@ -8,15 +8,15 @@ import { useInView } from 'react-intersection-observer';
 
 const projects = [
   {
-    title: "My Awesome App 1",
-    description: "A single-page application made with React.",
+    title: "Locals Only",
+    description: "A social network for local recomendations.",
     image: locals_1,
     liveLink: "https://locals-only-pedrobradu-49cce69c5b97.herokuapp.com/",
     codeLink: "https://github.com/pedrobradu/LOCALS_ONLY",
   },
   {
-    title: "My Awesome App 2",
-    description: "A single-page application made with React.",
+    title: "Final presentation at Google for Startups.",
+    description: "Graduation presentation for the Le Wagon community.",
     image: presentation,
     type: "video",
     liveLink: "https://www.youtube.com/watch?v=2GYRJtd1Qgc&t=4943s",
@@ -46,13 +46,13 @@ function Projects({id}) {
                     {project.description}
                   </Card.Text>
                   {project.type === 'video' ? (
-                    <Button href={project.liveLink} target="_blank">Watch Video</Button>
+                    <Button className="btn-warning" href={project.liveLink} target="_blank">Watch Video</Button>
                   ) : (
                     <>
-                      <Button href={project.liveLink} target="_blank">WebSite</Button>
+                      <Button className="btn-warning" href={project.liveLink} target="_blank">WebSite</Button>
                       {/* Only render GitHub button if codeLink is present */}
                       {project.codeLink && (
-                        <Button href={project.codeLink} target="_blank" className="ms-2">Github</Button>
+                        <Button href={project.codeLink} target="_blank" className="ms-2 btn-warning">Github</Button>
                       )}
                     </>
                   )}
