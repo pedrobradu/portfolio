@@ -61,7 +61,7 @@
 /* Mobile styles */
 @media (max-width: 767px) {
   .homeSection {
-    margin-top: 3em;
+    margin-top: 2em;
     height: auto;
     margin-bottom: 2em;
   }
@@ -84,8 +84,8 @@
 
   .homeSection img {
     margin-top: 3em;
-    width: 20em;
-    height: 20em;
+    width: 17em;
+    height: 17em;
   }
 
   .techStack i {
