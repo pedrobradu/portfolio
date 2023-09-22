@@ -3,6 +3,12 @@
   margin-bottom: 5em;
 }
 
+.projectsSection h2 {
+  font-size: 3rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+
 .projectCol {
   margin-bottom: 20px;
 }
@@ -16,4 +22,27 @@
 .projectImage {
   height: 350px;  /* or whatever height you prefer */
   object-fit: cover;  /* this will ensure the image covers the area without distortion */
+}
+
+@media (max-width: 767px) {
+  .projectsSection {
+    padding: 0;
+    margin-bottom: 5em;
+  }
+
+  .projectCol {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+  }
+
+  .projectCard {
+    width: 90%;
+  }
+
+  .projectImage {
+    height: 15em;  /* or whatever height you prefer */
+    object-fit: cover;  /* this will ensure the image covers the area without distortion */
+  }
+
 }

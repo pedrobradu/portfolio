@@ -1,22 +1,39 @@
 .homeSection {
-  margin-top: 6em;
+  margin-top: 4em;
   margin-bottom: 5em;
   text-align: center;
 }
 
 .homeSection h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-align: start;
 }
 
-.calligraphy {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 500;
-  font-size: 6rem;
-}
-
-.homeSection .lead {
+.lead {
   font-size: 1.2rem;
+  font-weight: bold;
+  text-align: start;
+}
+
+.firstCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22em;
+  padding-left: 3em !important;
+}
+
+.techStack {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+}
+
+.techStack i {
+  font-size: 2em; 
 }
 
 @keyframes levitate {
@@ -29,8 +46,8 @@
 }
 
 .homeSection img {
-  width: 35em;
-  height: 35em;
+  width: 30em;
+  height: 30em;
   object-fit: cover;
 
   /* Adding a shadow for levitation effect */
@@ -44,16 +61,21 @@
 /* Mobile styles */
 @media (max-width: 767px) {
   .homeSection {
-    margin-top: 6em;
+    margin-top: 3em;
     height: auto;
+    margin-bottom: 2em;
   }
 
   .homeSection h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
-  .calligraphy {
-    font-size: 3rem;
+  .firstCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12em;
+    padding-left: 3em !important;
   }
 
   .homeSection .lead {

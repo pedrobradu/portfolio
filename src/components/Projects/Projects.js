@@ -28,7 +28,7 @@ function Projects({id}) {
 
   const [ref, inView] = useInView({
     triggerOnce: false, // Observe forever
-    threshold: 0.3 // At least 10% of the element is visible
+    threshold: 0.4 // At least 10% of the element is visible
   });
 
   return (

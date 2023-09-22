@@ -10,7 +10,7 @@ function Experience({id}) {
 
   const [ref, inView] = useInView({
     triggerOnce: false, // Observe forever
-    threshold: 0.3 // At least 10% of the element is visible
+    threshold: 0.4 // At least 10% of the element is visible
   });
 
   const experiences = [
@@ -61,16 +61,16 @@ function Experience({id}) {
       <Container className={styles.experienceSection}>
         <h2 className={`mb-5 ${inView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Experience</h2>
         {experiences.map((exp, index) => (
-          <Row key={index} className={`d-flex ${styles.experienceItem}`}>
-            <Col md={2} className={`d-flex align-items-center ${styles.experienceLogo} ${inView ? "animate__animated animate__fadeInLeft" : "animate__animated animate__fadeOutLeft"}`}>
+          <Row key={index} className={`d-flex align-items-center ${styles.experienceItem}`}>
+            <Col md={2} className={`${styles.experienceLogo} ${inView ? "animate__animated animate__fadeInLeft" : "animate__animated animate__fadeOutLeft"}`}>
                 <a href={exp.website} target="_blank" rel="noopener noreferrer">
                     <Image src={exp.logo} alt={`${exp.company} Logo`} fluid rounded />
                 </a>
             </Col>
-            <Col md={8} className={`d-flex align-items-center justify-content-center ${styles.experienceDetail} ${inView ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOut"}`}>
+            <Col md={8} className={`${styles.experienceDetail} ${inView ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOut"}`}>
               <div>
-                <h3 className='text-start'>{exp.title} at {exp.company}</h3>
-                <p className='text-start'>{exp.description}</p>
+                <h3>{exp.title} at {exp.company}</h3>
+                <p>{exp.description}</p>
               </div>
               {/* <h5>Key Responsibilities:</h5>
               <ListGroup>
@@ -79,7 +79,7 @@ function Experience({id}) {
                 ))}
               </ListGroup> */}
             </Col>
-            <Col md={2} className={`d-flex align-items-center ${inView ? "animate__animated animate__fadeInRight" : "animate__animated animate__fadeOutRight"}`}>
+            <Col md={2} className={`${inView ? "animate__animated animate__fadeInRight" : "animate__animated animate__fadeOutRight"}`}>
               <span className={styles.experienceDuration}>{exp.duration}</span>
             </Col>
           </Row>
