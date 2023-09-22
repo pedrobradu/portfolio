@@ -1,7 +1,7 @@
 .contactSection {
   padding: 40px 0;
-  margin-bottom: 7em;
-  border-radius: 1em;
+  margin-bottom: 9em;
+  border-radius: 5px;
   /* border-color: black; */
   /* border-style: solid; */
   /* Adding a shadow for levitation effect */
@@ -27,4 +27,12 @@
 /* Increase the size of the Font Awesome icons slightly */
 .socialLinks a {
   font-size: 2rem;
+}
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .contactSection {
+    width: 85% !important;
+  }
 }

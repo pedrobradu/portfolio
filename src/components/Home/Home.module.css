@@ -75,7 +75,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 12em;
-    padding-left: 3em !important;
+    padding-left: 2em !important;
   }
 
   .homeSection .lead {
@@ -86,5 +86,9 @@
     margin-top: 3em;
     width: 20em;
     height: 20em;
+  }
+
+  .techStack i {
+    font-size: 1em; 
   }
 }
