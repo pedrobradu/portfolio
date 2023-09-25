@@ -21,6 +21,11 @@ section::before {
   visibility: hidden;
 }
 
+.active {
+  color: rgb(255, 193, 7) !important;
+}
+
+
 @media (max-width: 767px) {
   .initials {
     margin-left: 0;
