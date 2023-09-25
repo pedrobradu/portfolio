@@ -13,8 +13,24 @@
   margin-bottom: 0 !important;
 }
 
+section::before {
+  content: "";
+  display: block;
+  height: 5em;  /* Adjust based on your navbar's actual height */
+  margin-top: -5em;
+  visibility: hidden;
+}
+
 @media (max-width: 767px) {
   .initials {
     margin-left: 0;
+  }
+
+  section::before {
+    content: "";
+    display: block;
+    height: 15em;  /* Adjust based on your navbar's actual height */
+    margin-top: -15em;
+    visibility: hidden;
   }
 }

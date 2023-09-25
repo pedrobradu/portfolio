@@ -1,5 +1,4 @@
 .projectsSection {
-  padding: 40px 0;
   margin-bottom: 5em;
 }
 
@@ -26,7 +25,6 @@
 
 @media (max-width: 767px) {
   .projectsSection {
-    padding: 0;
     margin-bottom: 5em;
   }
 

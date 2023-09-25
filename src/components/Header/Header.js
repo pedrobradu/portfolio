@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body sticky-top">
+    <Navbar collapseOnSelect expand="lg" className="bg-body sticky-top">
       <Container>
         <Navbar.Brand href="#home">
           <p className={`${styles.initials}`}>&lt; PBD/&gt;</p>
