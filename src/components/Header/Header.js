@@ -27,12 +27,13 @@ function Header() {
     };
   }, []);
 
-  const handleNavLinkClick = (hash) => {
+  const handleNavLinkClick = (e, hash) => {
+    e.preventDefault();
     setTimeout(() => {
+        console.log("HOIIIIII");
         window.location.hash = hash;
-    }, 150);  // 150ms delay
+    }, 100);  // 150ms delay
   }
-
 
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body sticky-top">
@@ -54,28 +55,28 @@ function Header() {
                 {/* ... your nav links ... */}
                 <Nav.Link 
                   href="#home" 
-                  onClick={() => handleNavLinkClick("#home")}
+                  onClick={(e) => handleNavLinkClick(e, "#home")}
                   className={activeSection === "home" ? `${styles.active}` : ""} 
                   active={activeSection === "home"}>
                     <span>Home</span>
                 </Nav.Link>
                 <Nav.Link 
                   href="#experience" 
-                  onClick={() => handleNavLinkClick("#experience")}
+                  onClick={(e) => handleNavLinkClick(e, "#experience")}
                   className={activeSection === "experience" ? `${styles.active}` : ""} 
                   active={activeSection === "experience"}>
                     <span>Experience</span>
                 </Nav.Link>
                 <Nav.Link 
                   href="#projects" 
-                  onClick={() => handleNavLinkClick("#projects")}
+                  onClick={(e) => handleNavLinkClick(e, "#projects")}
                   className={activeSection === "projects" ? `${styles.active}` : ""} 
                   active={activeSection === "projects"}>
                     <span>Projects</span>
                 </Nav.Link>
                 <Nav.Link 
                   href="#contact" 
-                  onClick={() => handleNavLinkClick("#contact")}
+                  onClick={(e) => handleNavLinkClick(e, "#contact")}
                   className={activeSection === "contact" ? `${styles.active}` : ""} 
                   active={activeSection === "contact"}>
                     <span>Contact</span>
