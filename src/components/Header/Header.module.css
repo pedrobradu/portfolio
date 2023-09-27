@@ -26,10 +26,10 @@ section::before {
   visibility: hidden;
 }
 
-/* .active { */
+.active {
   /* color: rgb(255, 193, 7) !important; */
-  /* color: white !important; */
-/* } */
+  color: white !important;
+}
 
 @media (max-width: 767px) {
   .initials {

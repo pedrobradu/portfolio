@@ -34,7 +34,7 @@ function Header() {
           <p className={`${styles.initials}`}>&lt; PBD/&gt;</p>
         </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvas-navbar-nav" />
-          <Navbar.Collapse className="me-5 justify-content-end" id="navbar-nav">
+          <Navbar.Collapse className="bg-warning justify-content-end" id="navbar-nav">
               <Nav className={`${styles.links}`}>
                   <Nav.Link href="#home" className={activeSection === "home" ? `${styles.active}` : ""} active={activeSection === "home"}><span>Home</span></Nav.Link>
                   <Nav.Link href="#experience" className={activeSection === "experience" ? `${styles.active}` : ""} active={activeSection === "experience"}><span>Experience</span></Nav.Link>
