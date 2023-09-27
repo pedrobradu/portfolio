@@ -27,7 +27,8 @@ section::before {
 }
 
 .active {
-  color: rgb(255, 193, 7) !important;
+  /* color: rgb(255, 193, 7) !important; */
+  color: white !important;
 }
 
 @media (max-width: 767px) {

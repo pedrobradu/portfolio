@@ -14,7 +14,7 @@ function Home({id}) {
   return (
     <section id={id} ref={ref}>
       <Container className={`${styles.homeSection}`}>
-        <Row className="align-items-center">
+        <Row className="justify-content-around align-items-center">
           <Col md={6} className={`${styles.firstCol}`}>
             <div className={`${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
               <h1>Hello, I'm PEDRO DUARTE</h1>
@@ -36,7 +36,7 @@ function Home({id}) {
               <i class="devicon-javascript-plain-wordmark"></i>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <Image src={profilePic} roundedCircle ref={ref} className={`${inView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOutUp"}`} />
           </Col>
         </Row>
