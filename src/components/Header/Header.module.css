@@ -26,10 +26,10 @@ section::before {
   visibility: hidden;
 }
 
-.active {
+/* .active { */
   /* color: rgb(255, 193, 7) !important; */
-  color: white !important;
-}
+  /* color: white !important; */
+/* } */
 
 @media (max-width: 767px) {
   .initials {
@@ -39,12 +39,8 @@ section::before {
   section::before {
     content: "";
     display: block;
-    height: 5em;  /* Adjust based on your navbar's actual height */
-    margin-top: -5em;
+    height: 15em;  /* Adjust based on your navbar's actual height */
+    margin-top: -15em;
     visibility: hidden;
-  }
-
-  .active {
-    color: white !important;
   }
 }
