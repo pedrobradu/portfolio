@@ -65,13 +65,13 @@ function Experience({id}) {
 
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: false,
-    threshold: 0.6
+    threshold: 0.1
   });
 
   return (
     <section id={id}>
       <Container className={styles.experienceSection}>
-        <h2 ref={sectionRef} className={`mb-5 ${sectionInView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Experience</h2>
+        <h2 ref={sectionRef} className={`mt-5 mb-5 ${sectionInView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Experience</h2>
         {experiences.map((exp, index) => (
           <ExperienceItem key={index} exp={exp} />
         ))}

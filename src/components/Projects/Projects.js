@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 function ProjectItem({ project }) {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.5
+    threshold: 0.4
   });
 
   return (
@@ -64,7 +64,7 @@ function Projects({id}) {
   return (
     <section id={id}>
       <Container className={styles.projectsSection}>
-        <h2 ref={sectionRef} className={`mb-5 ${sectionInView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Projects</h2>
+        <h2 ref={sectionRef} className={`mt-5 mb-5 ${sectionInView ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeOut"}`}>Projects</h2>
         <Row>
           {projects.map((project, index) => (
             <ProjectItem key={index} project={project} />
