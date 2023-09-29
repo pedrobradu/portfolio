@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 function ExperienceItem({ exp }) {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 1
+    threshold: 0.4
   });
 
   return (
