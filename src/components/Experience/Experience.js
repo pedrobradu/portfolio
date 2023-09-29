@@ -65,7 +65,7 @@ function Experience({id}) {
 
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: false,
-    threshold: 0.9
+    threshold: 0.6
   });
 
   return (

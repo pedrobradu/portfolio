@@ -58,7 +58,7 @@ function Projects({id}) {
 
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: false, // Observe forever
-    threshold: 1 // At least 10% of the element is visible
+    threshold: 0.1 // At least 10% of the element is visible
   });
 
   return (
