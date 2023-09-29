@@ -29,11 +29,11 @@
 .techStack {
   display: flex;
   align-items: center; 
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .techStack i {
-  font-size: 2em; 
+  font-size: 3em; 
 }
 
 @keyframes levitate {
@@ -89,6 +89,6 @@
   }
 
   .techStack i {
-    font-size: 1em; 
+    font-size: 2em; 
   }
 }

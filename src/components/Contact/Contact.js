@@ -16,11 +16,11 @@ function Contact({id}) {
   return (
     <section id={id} ref={ref}>
       <Container className={`${styles.contactSection} ${inView ? "animate__animated animate__fadeInUp" : "animate__animated animate__fadeOutDown"}`}>
-        <h2 className='mb-3'>Contact Me</h2>
+        <h2 className='mb-3'>Let's Talk Opportunities!</h2>
         <Row>
           <Col className={styles.socialLinks}>
             {/* Here, you can add additional contact details or any other relevant information */}
-            <p>Feel free to reach out to me for collaboration, projects, or any inquiries.</p>
+            <p>I'm always interested in exploring new roles and contributing to dynamic teams. Reach out if you think we could be a good fit!</p>
             <a href="mailto:pedrobradul@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>

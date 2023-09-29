@@ -23,7 +23,7 @@ function Home({id}) {
               </p>
             </div>
             <div className={`${styles.techStack} ${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
-              <p className={`mb-0 ${styles.lead}`}>Tech Stack |</p>                           
+              {/* <p className={`mb-0 ${styles.lead}`}>Tech Stack |</p>*/}
               <i class="devicon-python-plain-wordmark"></i>
               <i class="devicon-django-plain-wordmark"></i>
               <i class="devicon-ruby-plain-wordmark"></i>
