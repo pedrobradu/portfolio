@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Home.module.css';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import profilePic from '../../assets/images/profile.jpeg'
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import profilePic from '../../assets/images/profile.jpeg';
+import resume from '../../assets/documents/resume.pdf';
 import { useInView } from 'react-intersection-observer';
 
 function Home({id}) {
@@ -15,15 +16,15 @@ function Home({id}) {
     <section id={id} ref={ref}>
       <Container className={`${styles.homeSection}`}>
         <Row className="justify-content-around align-items-center">
-          <Col md={6} className={`${styles.firstCol}`}>
-            <div className={`${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
+          <Col md={6} className={`${styles.firstCol} ${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
+            <div>
               <h1>Hello, I'm PEDRO DUARTE</h1>
               <p className={`${styles.lead}`}>
                 Full Stack Software Developer with a Bachelor's degree in Civil Engineering and 5 years of entrepreneurial experience.
               </p>
             </div>
-            <div className={`${styles.techStack} ${inView ? "animate__animated animate__fadeIn" : "animate__animated animate__fadeOut"}`}>
-              {/* <p className={`mb-0 ${styles.lead}`}>Tech Stack |</p>*/}
+            <Button variant="dark" className="fw-bold w-100 mx-auto" href={resume} download>Download My Resume</Button>
+            <div className={`${styles.techStack}`}>
               <i class="devicon-python-plain-wordmark"></i>
               <i class="devicon-django-plain-wordmark"></i>
               <i class="devicon-ruby-plain-wordmark"></i>
