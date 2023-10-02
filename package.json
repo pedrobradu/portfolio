@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pedrobradu.github.io/react-portfolio",
-  "name": "react-portfolio",
+  "homepage": "https://pedrobradu.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
