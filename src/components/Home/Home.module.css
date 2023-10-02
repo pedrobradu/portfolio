@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 25em;
-  padding-left: 3em !important;
+  /* padding-left: 3em !important; */
 }
 
 .techStack {
@@ -68,22 +68,24 @@
 
   .homeSection h1 {
     font-size: 2rem;
+    text-align: center;
   }
-
+  
   .firstCol {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15em;
-    padding-left: 2em !important;
+    height: 18em;
+    /* padding-left: 2em !important; */
   }
 
   .homeSection .lead {
     font-size: 1rem;
+    text-align: center;
   }
 
   .homeSection img {
-    margin-top: 3em;
+    margin-bottom: 3em;
     width: 17em;
     height: 17em;
   }
